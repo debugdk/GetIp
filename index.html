@@ -12,13 +12,11 @@
 
     <script>
 
-        var ipinfo;
+            $.getJSON("https://api.ipify.org?format=json", function (data) {
 
-        $.getJSON("http://ipinfo.io", function (data) {
+                $("#info").html("IP: " + data.ip + "");
 
-            $("#info").html("City: " + data.city + " ,County: " + data.country + " ,IP: " + data.ip + " ,Location: " + data.loc + " ,Organisation: " + data.org + " ,Postal Code: " + data.postal + " ,Region: " + data.region + "")
-
-        })
+            })
 
     </script>
 

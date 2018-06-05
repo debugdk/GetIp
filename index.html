@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<html>
+<head>
     <title></title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
@@ -11,17 +11,13 @@
                 " ,IP: " + data.ip + " ,Location: " + data.loc + " ,Organisation: " + data.org +
                 " ,Postal Code: " + data.postal + " ,Region: " + data.region + "")
             console.log(data);
-
         })
-
     </script>
 
 </head>
 <body>
-    <form id="form1" runat="server">
        <p>Client's information:</p>
 
-    <p id="info"></p>
-    </form>
+    <p id="info"></p>   
 </body>
 </html>

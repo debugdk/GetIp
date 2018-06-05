@@ -12,13 +12,9 @@
 
     <script>
 
-            $.getJSON("https://api.ipify.org?format=json&token=1a4f7233120165", function (data) {
-
-                $("#info").html("City: " + data.city + " ,County: " + data.country + " ,IP: " + data.ip + " ,Location: " + data.loc + " ,Organisation: " + data.org + " ,Postal Code: " + data.postal + " ,Region: " + data.region + "")
-                console.log(data);
-
-            })
-
+            $.getJSON("http://ipinfo.io?token=1a4f7233120165", function (data) {
+            $("#info").html("City: " + data.city + " ,County: " + data.country + " ,IP: " + data.ip + " ,Location: " + data.loc + " ,Organisation: " + data.org + " ,Postal Code: " + data.postal + " ,Region: " + data.region + "")
+        })
     </script>
 
 </head>

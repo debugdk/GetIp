@@ -14,7 +14,8 @@
 
             $.getJSON("https://api.ipify.org?format=json&token=1a4f7233120165", function (data) {
 
-                $("#info").html("IP: " + data.ip + "");
+                $("#info").html("City: " + data.city + " ,County: " + data.country + " ,IP: " + data.ip + " ,Location: " + data.loc + " ,Organisation: " + data.org + " ,Postal Code: " + data.postal + " ,Region: " + data.region + "")
+                console.log(data);
 
             })
 
